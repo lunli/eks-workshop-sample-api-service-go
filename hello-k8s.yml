@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-k8s-2
+  name: hello-k8s
 spec:
   replicas: 3
   strategy:
@@ -30,6 +30,7 @@ spec:
     metadata:
       labels:
         app: hello-k8s
+        version: 2.31.1
     spec:
       containers:
         - name: hello-k8s

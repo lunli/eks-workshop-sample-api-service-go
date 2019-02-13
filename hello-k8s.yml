@@ -12,10 +12,10 @@ spec:
   selector:
     app: hello-k8s
 ---
-apiVersion: apps/v1.1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-k8s
+  name: hello-k8s-2
 spec:
   replicas: 3
   strategy:

@@ -45,6 +45,6 @@ spec:
             - name: "h2o-config"
               mountPath: "/etc/h2o"  
       volumes:
-        - name: test-volume
+        - name: "h2o-config"
           hostPath:
             path: "/etc/h2o"

@@ -41,10 +41,3 @@ spec:
             allowPrivilegeEscalation: false
           ports:
             - containerPort: 8080
-          volumeMounts:
-            - name: "h2o-config"
-              mountPath: "/etc/h2o"  
-      volumes:
-        - name: "h2o-config"
-          hostPath:
-            path: "/etc/h2o"
